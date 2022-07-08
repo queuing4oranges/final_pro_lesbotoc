@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('event_image', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->integer('event_id');
+            $table->integer('image_id');
         });
     }
 
